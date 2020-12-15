@@ -18,11 +18,11 @@ Pruning has three stages:
 ## Usage
 
 Install the following python libraries:
-	torch>=1.6.0
-	torchvision>=0.7.0
-	numpy
-	tqdm
-	livelossplot
+``torch>=1.6.0
+torchvision>=0.7.0
+numpy
+tqdm
+livelossplot``
 Run :
 `$ mkdir saved_models`
 
