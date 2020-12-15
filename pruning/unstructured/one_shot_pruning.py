@@ -195,7 +195,7 @@ class OneShotPruning:
 		loss_history3 = self._retrain()
 		best_ckpt3 = args.model_path + '_best_retrain'
 		val_acc3 = self.compute_val_performance(self.model, self.val_dataloader, self.device)
-		if(val_acc2>=val_acc1):
+		if(val_acc3>=val_acc1):
 			print("Congrats! this is a winning ticket. \n val accuracy (original): {}\n val accuracy (pruned): {} \n val accuracy (retrained): {} ".format(val_acc1, val_acc2, val_acc3))
 		else:
 			print(" val accuracy (original): {}\n val accuracy (pruned): {} \n val accuracy (retrained): {} ".format(val_acc1, val_acc2, val_acc3))
